@@ -3,10 +3,31 @@
  * @version 1.01 1997-03-22
  * @author Gary Cornell
  */
-public class FirstSample
+public class FirstSample  // 源代码文件名必须和公共类的名字相同, .java为拓展名
 {
+   /**
+    * java ClassName运行编译的程序时,虚拟机将从ClassName的main方法开始执行, main方法必须声明public
+    *
+    * 数据类型:
+    *     整型:
+    *     byte short int long
+    *     int [-2,147,483,648 - 2,147,483,647] 20亿
+    *     4000000000L, 0XCA, 0101, 0B110, 1_000_000
+    *
+    *     浮点:
+    *     float, double
+    *     3.14F, 3.14D
+    *     0X11.1p-3 = (1 * 16 ^ 1 + 1 * 16 ^ 0 + 1 * 16 ^ -1) * (2 ^ -3)
+    *     16进制表示浮点数,系数采用16进制,指数以2为基数
+    *
+    *     Double.POSITIVE_INFINITY
+    *     Double.NEGATIVE_INFINITY
+    *     x == Double.NaN  // is never true
+    *     Double.isNaN(x)
+    */
    public static void main(String[] args)
    {
       System.out.println("We will not use 'Hello, World!'");
+      System.out.println("0X1.1p-3 = " + 0X11.1p-3 + " = " + (16 + 1 + 1.0 / 16) / 8);
    }
 }
